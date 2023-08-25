@@ -1,0 +1,37 @@
+import clientes.*
+
+
+
+/* 
+test "test 1 assert esta OK si assert.that(true)" {
+
+	assert.that(true)
+}
+* 
+test "test 2 assert esta OK si assert.that(false)" {
+
+	assert.notThat(false)
+}
+
+test "test 2 assert con equals (5 es igual a: 2+3)" {
+
+	assert.equals(5, 2+3)
+
+}*/
+
+test "olivia nace con concentracion = 6" {
+
+	assert.equals(6, olivia.gradoDeConcentracion())
+}
+
+test "bruno nace sin sed" {
+
+	assert.notThat(bruno.tieneSed())
+}
+
+test "bruno baja su peso a 54500 despues de darse un baño de vapor" {
+
+	bruno.banioDeVapor()
+	assert.equals(54500,bruno.peso()) 
+	assert.that(bruno.tieneSed())
+}
